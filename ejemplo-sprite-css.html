@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo Sprite css</title>
+	<link rel="stylesheet" href="css/all.css">
+	<style>
+		.ico{
+			width: 64px;
+			height: 64px;
+		}
+		.buttons_sociales { 
+	        background:url(image/redes-sociales.jpg) no-repeat
+	    }
+	    .rss {background-position: 0 0 }
+	    .twitter {background-position: -64px 0 }
+	    .digg {background-position: -128px 0 }
+	    .stumbleupon {background-position: -192px 0 }
+	    .facebook {background-position: 0 -64px }
+	    .delicious {background-position: -64px -64px }
+	    /*** Otra alternativa ****/
+	    .display-relative{position: relative}
+	    .rss2{left:0;}
+	</style>
+</head>
+<body>
+	<section class="bck dark">
+		<h1 class="text color white center">Ejemplo de Sprite CSS</h1>
+	</section>
+	<section class="bck theme">
+		<div class="row padding ">
+			<img src="image/redes-sociales.jpg" alt="Ejemplo de Sprite css" />
+		</div>
+		<div class="row padding ">
+			<div class="column_2">
+				<div class="ico buttons_sociales rss " ></div>
+				<div class="margin_top ico buttons_sociales display-relative rss2 " ></div> <!--2 ° Alternativa-->
+			</div>
+			<div class="column_2">
+				<div class="ico buttons_sociales twitter " ></div>
+			</div>
+			<div class="column_2">
+				<div class="ico buttons_sociales digg " ></div>
+			</div>
+			<div class="column_2">
+				<div class="ico buttons_sociales stumbleupon " ></div>
+			</div>
+			<div class="column_2">
+				<div class="ico buttons_sociales facebook " ></div>
+			</div>
+			<div class="column_2 margin_top">
+				<div class="ico buttons_sociales delicious " ></div>
+			</div>
+		</div>
+	</section>
+	<section class="bck theme ">
+		<div class=" row">
+	        <pre class="bck white rounded margin-top" contenteditable="true">
+	            <code data-language="css" class="text color green">
+	                .ico{
+	                    width: 64px;
+	                    height: 64px;
+	                }
+	                .buttons_sociales { 
+	                    background:url(image/redes-sociales.jpg) no-repeat
+	                }
+	                .rss {background-position: 0 0 }
+	                .twitter {background-position: -64px 0 }
+	                .digg {background-position: -128px 0 }
+	                .stumbleupon {background-position: -192px 0 }
+	                .facebook {background-position: 0 -64px }
+	                .delicious {background-position: -64px -64px }
+	                /*** Otra alternativa ****/
+	                .display-relative{position: relative}
+	                .rss2{left:0;}
+	            </code>          
+	        </pre>
+	    </div>
+	</section>
+	
+</body>
+</html>
