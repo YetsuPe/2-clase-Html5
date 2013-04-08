@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Clase Pendiente | Diplomado en desarrollo de Aplicaciones Web @yetsupe</title>
+
+    <link rel="stylesheet" href="css/kinout-skeiter9.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <div class="kinout">
+
+        <section >
+            <article>
+                <header class="bck vitamin-c">
+                    <h4 class="text shadow "> Clase Pendiente | Modulo HTML5</h4>
+                </header>
+                <div class="row">
+                    <div class="column_4">
+                        <img src="image/portada-yetsu.jpg" alt="portada yetsu" class="img_flex rounded" />
+                    </div>
+                    <div class="column_5 ">
+                        <h1>Temario</h1>
+                        <ul class="text left shadow big ">
+                            <li class="text color theme big ">Pendiente de la clase pasada :</li>
+                            <li>Sprites,Fuentes y tipografías font-face</li>
+                            <li>Compatibilidad entre navegadores</li>
+                            <li>Animaciones, transiciones y más css3</li>
+                            <li>Multimedia HTML5 (video,audio,svg,canvas)</li>
+                            <li>Api Web storage</li>
+                            <li>Api Geolocalización</li>
+                            <li>Api Off-line Storage</li>
+                        </ul>
+                    </div>
+                </div>
+                <footer class="bck dark">
+                    <h3 class="text white"> <a href="http://twitter.com/yetsupe">@yetsupe</a> <a href="http://twitter.com/skeiter9">@skeiter9</a></h3>
+                </footer>
+
+                
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <header class="bck vitamin-c">
+                    <h2>Sprites,Fuentes y tipografías font-face</h2>
+                </header>
+                <div class="row ">
+                    <div class="column_5">
+                        <h3 class="bck theme ">Sprites</h3>
+                        <p>Es un método que consiste en utilizar una sola imagen que a su vez agrupa muchas más y que haciendo uso de las propiedades background-position de CSS se visualice cada imagen de forma individual, nos sirve mucho para ahorrar peticiones al servidor y disminuir tamaño a las imágenes </p>
+                        <span class="text color theme">Desventajas :</span>
+                        <p>Al no ser imagenes vectoriales no podemos redimensionarlas sin perder caldad :(</p>
+                    </div>
+                    <div class="column_4">
+                        <img src="image/css-sprite-example.jpg" alt="Ejemplo de Sprite css" class="img_flex " />
+                    </div>
+                </div>
+                <div class="row " data-step="fade">
+                    <pre class="margin-top" contenteditable="true">
+                        <code data-language="css">
+                            .ico{
+                                width: 64px;
+                                height: 64px;
+                            }
+                            .buttons_sociales { 
+                                background:url(image/redes-sociales.jpg) no-repeat
+                            }
+                            .rss {background-position: 0 0 }
+                            .twitter {background-position: -64px 0 }
+                            .digg {background-position: -128px 0 }
+                            .stumbleupon {background-position: -192px 0 }
+                            .facebook {background-position: 0 -64px }
+                            .delicious {background-position: -64px -64px }
+                            /*** Otra alternativa ****/
+                            .display-relative{position: relative}
+                            .rss2{left:0;}
+                        </code>          
+                    </pre>
+                    <a href="ejemplo-sprite-css.html" class="button rounded text shadow big"> Ver Ejemplo  </a>
+                </div>
+            </article>
+            <article>
+                <header class="bck vitamin-c">
+                    <h2>Sprites,Fuentes y tipografías font-face</h2>
+                </header>
+                <div class="row ">
+                    <div class="column_7">
+                        <h3 class="bck theme ">Fuentes y tipografías font-face</h3>
+                        <p>Es uno de los nuevos Features que nos proporciona CSS3, es la más recomendada al momento de trabajar con iconos, al ser fuente tipografíca nos proporciona iconos vectoriales lo cual hace mas ligero el manejos de imágenes y podemos redimenzionar sin perder calidad </p>
+                        <span class="text color theme">Desventajas :</span>
+                        <p>No podemos tener iconos coloridos, son colores solidos, ya que cada icono es equivalente a una letra </p>
+                    </div>
+                    <div class="column_2">
+                        <img src="image/icon-fonts-example.jpg" alt="Ejemplo de icon fonts" class="img_flex " />
+                    </div>
+                </div>
+                <div class="row " data-step="fade">
+                    <pre class="margin-top" contenteditable="true">
+                        <code data-language="css">
+                            @font-face {
+                              font-family: 'FontAwesome';
+                              src: url('../font/fontawesome-webfont.eot?v=3.0.1');
+                              src: url('../font/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+                                url('../font/fontawesome-webfont.woff?v=3.0.1') format('woff'),
+                                url('../font/fontawesome-webfont.ttf?v=3.0.1') format('truetype');
+                              font-weight: normal;
+                              font-style: normal;
+                            }
+                            [class^="icon-"],[class*=" icon-"] {
+                              font-family: FontAwesome;
+                              font-weight: normal;
+                              font-style: normal;
+                              text-decoration: inherit;
+                              -webkit-font-smoothing: antialiased;
+                            }
+                            .icon-twitter:before{ content: "\f099"; }
+                        </code>          
+                    </pre>
+                    <a href="ejemplo-icon-font.html" class="button rounded text shadow big"> Ver Ejemplo  </a>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article>
+                <header class="bck vitamin-c">
+                    <h2>Conpatibilidad entre navegadores </h2>
+                </header>
+                <div class="row ">
+                    <div class="column_7">
+                        <h3 class="bck theme ">Fuentes y tipografías font-face</h3>
+                        <p>Es uno de los nuevos Features que nos proporciona CSS3, es la más recomendada al momento de trabajar con iconos, al ser fuente tipografíca nos proporciona iconos vectoriales lo cual hace mas ligero el manejos de imágenes y podemos redimenzionar sin perder calidad </p>
+                        <span class="text color theme">Desventajas :</span>
+                        <p>No podemos tener iconos coloridos, son colores solidos, ya que cada icono es equivalente a una letra </p>
+                    </div>
+                    <div class="column_2">
+                        <img src="image/icon-fonts-example.jpg" alt="Ejemplo de icon fonts" class="img_flex " />
+                    </div>
+                </div>
+                <div class="row " data-step="fade">
+                    <pre class="margin-top" contenteditable="true">
+                        <code data-language="css">
+                            @font-face {
+                              font-family: 'FontAwesome';
+                              src: url('../font/fontawesome-webfont.eot?v=3.0.1');
+                              src: url('../font/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+                                url('../font/fontawesome-webfont.woff?v=3.0.1') format('woff'),
+                                url('../font/fontawesome-webfont.ttf?v=3.0.1') format('truetype');
+                              font-weight: normal;
+                              font-style: normal;
+                            }
+                            [class^="icon-"],[class*=" icon-"] {
+                              font-family: FontAwesome;
+                              font-weight: normal;
+                              font-style: normal;
+                              text-decoration: inherit;
+                              -webkit-font-smoothing: antialiased;
+                            }
+                            .icon-twitter:before{ content: "\f099"; }
+                        </code>          
+                    </pre>
+                    <a href="ejemplo-icon-font.html" class="button rounded text shadow big"> Ver Ejemplo  </a>
+                </div>
+            </article>
+        </section>
+
+    </div>
+    <script src="js/QuoJS.js"></script>
+    <script src="js/raf.js"></script>
+    <script src="js/kinout-1.0.js"></script>
+    <script>
+        $$(document).ready(function() {
+            KINOUT.init();
+        });
+    </script>
+    <script src="js/rainbow.min.js"></script>
+    <script src="js/generic.js"></script>
+
+</body>
+</html>

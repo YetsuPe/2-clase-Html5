@@ -1,5 +1,5 @@
-2-clase-Html5
+1-clase-Html5
 =============
-<h2>Diapositivas Online : https://YetsuPe.github.com/2-clase-Html5</h2>
+[Diapositivas http://yetsupe.github.com/1-clase-Html5 ](http://yetsupe.github.com/1-clase-Html5)
 
-2 Clase del Diplomado de Desarrollo de Aplicaciones Web por @yetsupe
+Diapositivas y demás material de la primera session de clases del #yetCurso
